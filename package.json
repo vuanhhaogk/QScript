@@ -1,0 +1,31 @@
+{
+  "name": "qscript",
+  "version": "0.0.1",
+  "description": "Quick NodeJS Script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "qs": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuanhhaogk/QScript.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Script",
+    "Quick"
+  ],
+  "author": "Vu Anh Hao <vuanhhaogk@gmail.com> (https://vuanhhaogk.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vuanhhaogk/QScript/issues"
+  },
+  "homepage": "https://github.com/vuanhhaogk/QScript#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "moment": "^2.17.1"
+  }
+}
