@@ -60,13 +60,33 @@ QScript v0.0.1 [https://github.com/vuanhhaogk/QScript.git]
 
 ### Core
 
-#### Input
+#### CLI
 
 ```js
-const Input = require('qs.input');
+const CLI = require('qs.cli');
 ```
 
+```
+CLI
+.question('question to ask!')
+.then(function(answer){
+    // code here
+})
+```
 
+```
+var bar = CLI.progress({
+        label: "<label>", // option, default ''
+        percent: "<percent>", // option, default 0
+        barwidth: <barwidth>, // option, default 30
+        textwidth: <textwidth>, // option, default 30
+        complete: <char>, // option, default =,
+        imcomplete: <char>, // option, default ' '
+    });
+
+bar.update([percent], [label]);
+bar.end([percent], [label]);
+```
 
 
 ## License

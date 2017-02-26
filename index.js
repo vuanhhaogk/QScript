@@ -36,6 +36,9 @@ function run(data){
         },
         console: console,
         log: console.log,
+        setInterval: setInterval,
+        setTimeout: setTimeout,
+        clearInterval: clearInterval,
         Promise: typeof Promise === 'undefined' ? require('promise-polyfill') : Promise,
         logF: function(msg){
             log += '[' + (moment().format('YYYY/MM/DD HH:mm:ss')) + '] ' + msg + os.EOL;

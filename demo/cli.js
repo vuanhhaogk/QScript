@@ -2,8 +2,27 @@
 
 const CLI = require('qs.cli');
 
-CLI
+var bar = CLI.progress({
+    label: 'Anh em nha ali baba Di ve noi rat xa, coi chi co anh va em ma tjoi',
+    align: 'center',
+    barwidth: 40,
+    textwidth: 39
+});
+
+var p = 0;
+
+var loop = setInterval(function(){
+    bar.update(p);
+    if (p < 1)
+        p += .05;
+    else {
+        bar.end();
+        clearInterval(loop);
+    }
+}, 100);
+
+/*CLI
 .question('Your name: ')
 .then(function(name){
     log(name);
-});
+});*/
