@@ -1,5 +1,3 @@
-Promise = typeof Promise === 'undefined' ? require('promise-polyfill') : Promise;
-
 const readline = require('readline');
 const CLI = {};
 

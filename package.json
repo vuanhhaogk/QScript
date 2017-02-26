@@ -26,6 +26,7 @@
   "homepage": "https://github.com/vuanhhaogk/QScript#readme",
   "dependencies": {
     "commander": "^2.9.0",
+    "httpreq": "^0.4.23",
     "moment": "^2.17.1",
     "promise-polyfill": "^6.0.2"
   }

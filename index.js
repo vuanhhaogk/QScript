@@ -9,6 +9,7 @@ const moment = require('moment');
 
 const sdir = process.cwd();
 
+Promise = typeof Promise === 'undefined' ? require('promise-polyfill') : Promise;
 
 function readData(path){
     return fs.readFileSync(path).toString();
