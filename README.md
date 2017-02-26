@@ -1,0 +1,2 @@
+# QScript
+Quick NodeJS Script
